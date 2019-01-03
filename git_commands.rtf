@@ -37,3 +37,13 @@ git push <remote_name> --delete <branch_name>
 # To force changes of the local repo to remote
 git push -f <remote_name> <branch_name>
 
+# To merge remote repo to master
+git checkout master
+git pull <remote_name> <branch_name>
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+git push origin master
+
