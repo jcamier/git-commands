@@ -105,3 +105,13 @@ git stash list
 
 # To apply a stash
 git stash pop
+
+# To go to a different commit point
+# Least distructive and changes where HEAD is pointing, can back out our changes
+git reset <commit_id> --soft
+
+# It unstages assets/files
+git reset <commit_id> --mixed
+
+# Wipes out all changes
+git reset <commit_id> --hard
